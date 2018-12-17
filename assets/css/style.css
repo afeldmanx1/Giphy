@@ -1,6 +1,6 @@
 .jumbotron {
     opacity: 0.7;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -8,4 +8,28 @@
 body {
     background-image: url("../images/background.jpg");
     background-position: center;
+}
+
+.container {
+    opacity: 0.7;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+.btn {
+    margin: 4px;
+}
+
+.gifDiv{
+    float: left;
+    margin: 4px;
+}
+
+img { 
+    height: 145px;
+    width: 145px;
+}
+
+#player-input {
+    padding: 10%;
 }

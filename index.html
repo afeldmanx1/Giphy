@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NBA Legends GIF</title>
+    <title>NBA Legends GIFs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
@@ -13,35 +13,38 @@
 
 <body>
     <header>
-        <div class="jumbotron jumbotron-fluid p-1 mb-2 bg-warning">
-            <div class="container">
-                <h1 class="display-3 text-center font-weight-bold text-light">NBA LEGENDS GIF ACCESS</h1>
-                <p class="lead text-center font-weight-bold">Click on a current category or create a new category!</p>
-                <p class="lead text-center font-weight-bold">GIFS can be paused/played and downloaded! Enjoy!</p>
-            </div>
-        </div>
+    <div class="jumbotron jumbotron-fluid p-1 mb-2 bg-warning">
+        <h1 class="display-3 text-center font-weight-bold text-light">NBA LEGENDS GIF ACCESS</h1>
+        <p class="lead text-center font-weight-bold">Click on a current category or create a new category!</p>
+        <p class="lead text-center font-weight-bold">GIFS can be paused and played! Enjoy!</p>
+    </div>
     </header>
+    <br>
 
     <div class="container bg-warning">
         <div class="row">
-            <div id="categoryButtons"></div>
-        </div>
-        <div class="row">
             <div class="col-lg-9">
-                <div id="gifImages"></div>
+                <div id="legendButtons"></div>
             </div>
             <div class="col-lg-3">
+                <form id="gif-form" role="form">
+                    <div class="form-group">
+                        <input type="text" id="player-input" aria-describedby="buttonName" placeholder="Enter New Player Here!">
+                    </div>
+                    <input id="addGif" type="submit" value="ADD" class="btn btn-primary text-warning bg-dark">
+                    <input id="removeGif" type="submit" value="REMOVE ADDED" class="btn btn-primary text-warning bg-dark">
+                </form>    
             </div>
         </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-9">
+                <div id="gifsAppear"></div>
+            </div>
+        <div>
     </div>
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 
